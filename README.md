@@ -1,4 +1,4 @@
 # EasyGrid
 An easy CSS grid for scaffolding, prototyping and testing your web projects
 
-https://github.com/easycss/easygrid/blob/master/easygrid.jpg
+![Easy Grid Preview](https://github.com/easycss/easygrid/blob/master/easygrid.jpg)
