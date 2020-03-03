@@ -5,3 +5,15 @@ An easy CSS grid for scaffolding, prototyping and testing your web projects
 ## https://easycss.github.io/easygrid/index.css
 
 ![Easy CSS - Easy Grid Preview](https://github.com/easycss/easygrid/blob/master/easygrid.jpg)
+
+### Options
+```
+.row{
+  font-size: .9rem;
+}
+@media screen and (max-width: 550px){
+  .row{
+    text-align: center;
+  }
+}
+```
