@@ -1,4 +1,4 @@
-# break990.css
+# alternative : break990.css
 
 ## EasyGrid
 An easy CSS grid for scaffolding, prototyping and testing your web projects
