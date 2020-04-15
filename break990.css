@@ -1,0 +1,206 @@
+/* 
+USAGE:
+12 column grid
+.col-6 .col-6
+.col-4 .col-4 .col-4
+.col-5 .col-7
+
+.row (margin: 2% 2%)
+Important: When nesting .container only with .container + .rows .cols
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+      <div class="col-6">
+  </div>
+</div>
+
+.hide-sm (remove content below 990px) 
+*/
+
+/* BASIC RESET - uncomment if needed */
+/* 
+
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; font-family: sans-serif; } 
+
+*/
+
+
+/* ==== GRID SYSTEM ==== */
+.container {
+  width: 100%; /* applied at 990px breakpoint */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:first-of-type {
+  margin-top: 0%;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+/* ******************************************** */
+/* MARGINS ABOVE 990px */
+.row [class^="col"] {
+  float: left;
+  margin: 2% 2%;
+  min-height: 1px;
+}
+
+/* MARGINS BELOW 990px */
+@media only screen and (max-width: 990px) {
+  .row [class^="col"] {
+    margin: 2% 2%;
+  }
+}
+
+/* ******************************************** */
+/* full width on mobile */
+.col-1,
+.col-1-offset,
+.col-2,
+.col-2-offset,
+.col-3,
+.col-3-offset,
+.col-4,
+.col-4-offset,
+.col-5,
+.col-5-offset,
+.col-6,
+.col-6-offset,
+.col-7,
+.col-7-offset,
+.col-8,
+.col-8-offset,
+.col-9,
+.col-9-offset,
+.col-10,
+.col-10-offset,
+.col-11,
+.col-11-offset,
+.col-12 {
+  width: 96%;
+}
+
+/* ignore collapse at mobile breakpoint (990px) */
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+/* ******************************************************* */
+/* clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* hide on mobile */
+.hide-sm {
+  display: none;
+}
+
+/* ******************************************************* */
+/* switch FROM mobile first (all cols full width) at 990px */
+/* ******************************************************* */
+@media only screen and (min-width: 990px) {
+  .col-1 {
+    max-width: 4.33%;
+  }
+
+  .col-2 {
+    max-width: 12.66%;
+  }
+
+  .col-3 {
+    max-width: 21%;
+  }
+
+  .col-4 {
+    max-width: 29.33%;
+  }
+
+  .col-5 {
+    max-width: 37.66%;
+  }
+
+  .col-6 {
+    max-width: 46%;
+  }
+
+  .col-7 {
+    max-width: 54.33%;
+  }
+
+  .col-8 {
+    max-width: 62.66%;
+  }
+
+  .col-9 {
+    max-width: 71%;
+  }
+
+  .col-10 {
+    max-width: 79.33%;
+  }
+
+  .col-11 {
+    max-width: 87.66%;
+  }
+
+  .col-12 {
+    max-width: 96%;
+  }
+
+  .hide-sm {
+    display: block;
+  }
+
+}
