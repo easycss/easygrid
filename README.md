@@ -6,7 +6,7 @@ An easy CSS grid for scaffolding, prototyping and testing your web projects
 `<link rel='stylesheet' href='https://easycss.github.io/easygrid/index.css'>`
 ## [https://easycss.github.io/easygrid/index.css](https://easycss.github.io/easygrid/index.css)
 
-![Easy CSS - Easy Grid Preview](https://github.com/easycss/easygrid/raw/master/easygrid.jpg)
+![Easy CSS - Easy Grid Preview](https://github.com/easycss/easygrid/raw/main/easygrid.jpg)
 
 ### Options
 ```
